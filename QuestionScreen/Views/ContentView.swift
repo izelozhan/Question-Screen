@@ -34,7 +34,7 @@ struct ContentView: View {
                     .multilineTextAlignment(.leading)
                 Spacer()
                 HStack {
-                    ForEach(0..<question.possibleAnswers.count) { answerIndex in
+                    ForEach(question.possibleAnswers.indices, id:\.self) { answerIndex in
                         Button(action: {
                             print("Tapped on option with the text: \(question.possibleAnswers[answerIndex])")
                             self.mainColor = answerIndex == question.correctAnswerIndex ? .green : .red

@@ -15,10 +15,10 @@ struct ChoiceTextView: View {
     var body: some View {
         Text(choiceText)
             .font(.body)
-            .bold()
-            .multilineTextAlignment(.center)
-            .padding()
-            .border(accentColor, width: 4)
+                      .bold()
+                      .multilineTextAlignment(.center)
+                      .padding()
+                      .border(accentColor, width: 4)
     }
 }
 
